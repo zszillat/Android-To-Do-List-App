@@ -10,4 +10,16 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowSoftInputMode">adjustResize</item>
     </style>
+
+    <style name="text">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="background">
+        <item name="backgroundTint">#1B1B1B</item>
+    </style>
+
+    <style name="splash">
+        <item name="android:background">#070762</item>
+    </style>
 </resources>

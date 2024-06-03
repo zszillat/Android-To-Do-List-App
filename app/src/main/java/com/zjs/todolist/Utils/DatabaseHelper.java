@@ -96,6 +96,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return tasks;
     }
 
+    public boolean deleteTask(ToDoModel task) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        return db.delete(TODO_TABLE, ID + " = ?", new String[]{String.valueOf(task.getId())}) > 0;
+    }
+
 
 
 
